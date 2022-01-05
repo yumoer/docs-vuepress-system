@@ -1,31 +1,51 @@
-// 注意: base的值为github仓库的名称
 module.exports = {
-    base: '/vuepress-starter/', /* 基础虚拟路径: */
-    dest: 'dist', /* 打包文件基础路径, 在命令所在目录下 */
-    title: 'TypeScript 入门', // 标题
-    description: '学习使用 TypeScript', // 标题下的描述
-    themeConfig: { // 主题配置
-        sidebar: [ // 左侧导航
+    title: 'Yumoer',
+    description: 'Hello, my friend!',
+    dest: './docs/.vuepress/dist',
+    ga: '',
+    evergreen: true,
+    theme: 'vdoing',
+    head: [
+        ['link', {
+            rel: 'icon',
+            href: `/favicon.ico`
+        }]
+    ],
+    themeConfig: {
+        // 博客配置
+        blogConfig: {
+            category: {
+                location: 2,     // 在导航栏菜单中所占的位置，默认2
+                text: 'Category' // 默认文案 “分类”
+            },
+            tag: {
+                location: 3,     // 在导航栏菜单中所占的位置，默认3
+                text: 'Tag'      // 默认文案 “标签”
+            },
+            socialLinks: [     // 信息栏展示社交信息
+                { icon: 'reco-github', link: 'https://github.com/recoluan' },
+                { icon: 'reco-npm', link: 'https://www.npmjs.com/~reco_luan' }
+            ]
+        },
+        nav: [
+            { text: 'Home', link: '/' },
+            { text: 'Guide', link: '/guide/' },
             {
-                title: '初识 TypeScript', // 标题
-                collapsable: false, // 下级列表不可折叠
-                children: [ // 下级列表
-                    'chapter1/01_初识TS',
-                    'chapter1/02_安装TS',
-                    'chapter1/03_HelloWorld'
+                text: 'Languages',
+                items: [
+                    { text: 'Chinese', link: '/language/chinese' },
+                    { text: 'English', link: '/language/english' }
                 ]
             },
+            { text: 'External', link: 'https://www.baidu.com' },
+        ],
+        sidebarDepth: 2,
+        sidebar: [
             {
-                title: 'TypeScript 常用语法',
+                title: 'Guide',
                 collapsable: false,
-                children: [
-                    'chapter2/1_type',
-                    'chapter2/2_interface',
-                    'chapter2/3_class',
-                    'chapter2/4_function',
-                    'chapter2/5_generic',
-                ]
-            },
+                children: ['/guide/']
+            }
         ]
     }
 }

@@ -1,19 +1,21 @@
 {
-  "name": "vuepress-starter",
+  "name": "vuepress",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "npm run dev",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npm run doc:dev",
-    "doc:dev": "vuepress dev docs",
-    "doc:build": "vuepress build docs",
-    "doc:deploy": "gh-pages -d docs/dist"
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs"
   },
-  "author": "",
-  "license": "ISC",
   "devDependencies": {
     "gh-pages": "^3.2.3",
-    "vuepress": "^1.9.5"
-  }
+    "vuepress": "^1.9.5",
+    "vuepress-theme-reco": "^1.6.10",
+    "vuepress-theme-vdoing": "^1.9.3"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
