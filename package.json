@@ -6,16 +6,16 @@
   "scripts": {
     "start": "npm run dev",
     "test": "echo \"Error: no test specified\" && exit 1",
+    "editFm": "node utils/editFrontmatter.js",
     "dev": "vuepress dev docs",
     "build": "vuepress build docs"
   },
   "devDependencies": {
     "gh-pages": "^3.2.3",
     "vuepress": "^1.9.5",
-    "vuepress-theme-reco": "^1.6.10",
     "vuepress-theme-vdoing": "^1.9.3"
   },
   "keywords": [],
-  "author": "",
+  "author": "yumoer",
   "license": "ISC"
 }

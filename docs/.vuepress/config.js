@@ -2,6 +2,7 @@ module.exports = {
     title: 'Yumoer',
     description: 'Hello, my friend!',
     dest: './docs/.vuepress/dist',
+    base:'/',
     ga: '',
     evergreen: true,
     theme: 'vdoing',
@@ -12,6 +13,10 @@ module.exports = {
         }]
     ],
     themeConfig: {
+        repo: 'https://github.com/yumoer/vuepress-starter', // Github仓库地址
+        docsDir: 'docs', // .md文件放在了docs目录下
+        editLinks: true, // 启用编辑链接
+        editLinkText: '编辑',
         // 博客配置
         blogConfig: {
             category: {
