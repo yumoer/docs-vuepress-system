@@ -1,7 +1,7 @@
 ---
 title: README
 date: 2022-01-05 10:03:31
-permalink: /pages/cfe58b/
+permalink: /guide/
 categories:
   - guide
 tags:

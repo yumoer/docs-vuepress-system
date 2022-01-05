@@ -1,11 +1,16 @@
+const path = require("path")
+const rootpath = path.dirname(__dirname) //执行一次dirname将目录定位到docs目录
+const utils = require('./utils/index.js');
+const filehelper = require('./utils/initPage.js');
+
 module.exports = {
     title: 'Yumoer',
     description: 'Hello, my friend!',
     dest: './docs/.vuepress/dist',
-    base:'/',
     ga: '',
     evergreen: true,
     theme: 'vdoing',
+    // plugins: ['permalink-pinyin', ['autobar', {'pinyinNav': true}]],
     head: [
         ['link', {
             rel: 'icon',
@@ -13,10 +18,6 @@ module.exports = {
         }]
     ],
     themeConfig: {
-        repo: 'https://github.com/yumoer/vuepress-starter', // Github仓库地址
-        docsDir: 'docs', // .md文件放在了docs目录下
-        editLinks: true, // 启用编辑链接
-        editLinkText: '编辑',
         // 博客配置
         blogConfig: {
             category: {
@@ -33,24 +34,48 @@ module.exports = {
             ]
         },
         nav: [
-            { text: 'Home', link: '/' },
-            { text: 'Guide', link: '/guide/' },
+            { text: '首页', link: '/' },
+            { text: '文档', link: '/guide/' },
             {
-                text: 'Languages',
+                text: '语言',
                 items: [
-                    { text: 'Chinese', link: '/language/chinese' },
+                    { text: '中文简体', link: '/language/chinese' },
                     { text: 'English', link: '/language/english' }
                 ]
             },
             { text: 'External', link: 'https://www.baidu.com' },
         ],
         sidebarDepth: 2,
-        sidebar: [
+        // 侧边栏配置
+        // sidebar: {
+        //     '/blog/1. 框架指南/': utils.genSidebar('1. 框架指南', filehelper.getFileName(rootpath+"/blog/1. 框架指南/"), true),
+        //     '/blog/javascript/': utils.genSidebar('页面js相关', filehelper.getFileName(rootpath+"/blog/javascript/"), false),
+        //     '/blog/html/': utils.genSidebar('页面html相关', filehelper.getFileName(rootpath+"/blog/html/"), false),
+        //     '/blog/plugins/': utils.genSidebar('插件', filehelper.getFileName(rootpath+"/blog/plugins/"), false),
+        //     '/blog/ui/': utils.genSidebar('组件', filehelper.getFileName(rootpath+"/blog/ui/"), false),
+        //     '/about/': utils.genSidebar('关于', filehelper.getFileName(rootpath+"/about/"), false),
+        // },
+        sidebar: [ // 左侧导航
             {
-                title: 'Guide',
+                title: '初识 TypeScript', // 标题
+                collapsable: false, // 下级列表不可折叠
+                children: [ // 下级列表
+                    'javascript/01_初识TS',
+                    'javascript/02_安装TS1',
+                    'javascript/03_HelloWorld'
+                ]
+            },
+            {
+                title: 'TypeScript 常用语法',
                 collapsable: false,
-                children: ['/guide/']
-            }
-        ]
+                children: [
+                    'html/1_type',
+                    'html/2_interface',
+                    'html/3_class',
+                    'html/4_function',
+                    'html/5_generic',
+                ]
+            },
+        ],
     }
 }

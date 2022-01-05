@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "npm run dev",
+    "slider": "node docs/.vuepress/utils/initPage.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "editFm": "node utils/editFrontmatter.js",
     "dev": "vuepress dev docs",
     "build": "vuepress build docs"
   },
@@ -16,6 +16,6 @@
     "vuepress-theme-vdoing": "^1.9.3"
   },
   "keywords": [],
-  "author": "yumoer",
+  "author": "",
   "license": "ISC"
 }
