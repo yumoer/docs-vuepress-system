@@ -8,7 +8,9 @@
     "slider": "node docs/.vuepress/utils/initPage.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "vuepress dev docs",
-    "build": "vuepress build docs"
+    "build": "vuepress build docs",
+    "deploy": "gh-pages -d dist",
+    "commit": "npm run build && npm run deploy"
   },
   "devDependencies": {
     "gh-pages": "^3.2.3",

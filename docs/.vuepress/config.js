@@ -1,7 +1,7 @@
 module.exports = {
     title: 'Yumoer',
     description: 'Hello, my friend!',
-    dest: './docs/.vuepress/dist',
+    dest: 'dist',
     ga: '',
     base:'/',
     evergreen: true,
