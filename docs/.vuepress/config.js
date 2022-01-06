@@ -1,13 +1,9 @@
-const path = require("path")
-const rootpath = path.dirname(__dirname) //执行一次dirname将目录定位到docs目录
-const utils = require('./utils/index.js');
-const filehelper = require('./utils/initPage.js');
-
 module.exports = {
     title: 'Yumoer',
     description: 'Hello, my friend!',
     dest: './docs/.vuepress/dist',
     ga: '',
+    base:'/',
     evergreen: true,
     theme: 'vdoing',
     // plugins: ['permalink-pinyin', ['autobar', {'pinyinNav': true}]],
@@ -56,6 +52,11 @@ module.exports = {
         //     '/about/': utils.genSidebar('关于', filehelper.getFileName(rootpath+"/about/"), false),
         // },
         sidebar: [ // 左侧导航
+            {
+                title: '文档介绍', // 标题
+                collapsable: false, // 下级列表不可折叠
+                path:'/guide/',
+            },
             {
                 title: '初识 TypeScript', // 标题
                 collapsable: false, // 下级列表不可折叠
