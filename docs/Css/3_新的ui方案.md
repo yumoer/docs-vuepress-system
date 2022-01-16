@@ -1,0 +1,220 @@
+---
+title: 3_新的ui方案
+date: 2022-01-16 16:11:26
+permalink: /pages/f2c3bd/
+categories:
+  - css
+tags:
+  - 
+---
+
+# 新的UI方案
+## 文本新增样式
+	opacity和rgba（）的相同与区别：
+		相同点：两者都是用来设置元素的不透明度的。
+		区别：opacity会继承父元素的opacity属性，而rgba设置的元素的后代元素不会继承不透明属性。
+	text-shadow：
+		添加阴影文本，接受用逗号分隔的阴影列表
+		每个阴影都来自元素的x和y偏移，迷糊半径和颜色的值描述
+	transition：
+		转换属性，转换持续时间，转换定时功能和转换延迟的简写属性。
+	filter：
+		滤镜属性，提供的图形特效，锐化或元素变色，通常被用于调整图片，背景和边界的渲染。
+	-webkit-text-stroke：
+		为文本指定了宽和颜色，只有webkit内核才支持。
+	direction：
+		设置文本，表格列和水平溢出的方向。
+		unicode-bidi和direction一起决定了如何处理文档中的双向文本，一般一起使用。
+	text-overflow：
+		确定如何向用户发出未显示的溢出内容信号，可以被剪切，显示一个个省略号或显示一个自定义字符串。
+		一般三个一起使用：可以文本超出显示省略号，包裹区域不能靠文本撑开。
+			white-space:nowrap; 
+			overflow:hidden; 
+			text-overflow:ellipsis; 
+## 盒模型新增样式
+	正值往外放 负值往里收
+	阴影：
+	box-shadow：默认值为none，不可继承
+		* 以逗号分割列表来描述一个或多个阴影效果。
+		* 如果元素同时设置了border-radius,阴影也会有圆角效果。
+		* 多个阴影时和多个text-shadows规则相同（第一个阴影在最上面）
+		* 属性值：
+			* inset：默认阴影在边框外。使用inset后，阴影在边框内
+			* <offset-x> 设置水平偏移量，如果是负值则阴影位于元素左边
+			* <offset-y> 设置垂直偏移量，如果是负值则阴影位于元素上面
+			* <blur-radius> 值越大，模糊面积越大，阴影就越来越淡
+			* <spread-radius> 取正值时，阴影扩大；取负值时，阴影收缩，默认为0
+	box-shadow（盒子阴影）与text-shadow（文字阴影）相比：
+		1.增加了inset 内阴影，阴影在边框内
+		2.增加一个值<spread-radius>，阴影大小
+
+	倒影：
+	 -wibkit-box-reflect：默认值为none 不可继承
+		* 设置元素的倒影
+		* above/below/left/right + 图片间距
+		* 属性值：（必须是123的顺序）
+			* 倒影的方向：above,below,right,left
+			* 倒影的距离：长度单位
+			* 渐变：**
+
+	resize: 默认值为none ,不可继承
+		* 允许你控制一个元素的可调整大小性（一定要配合overflow:auto来使用）
+		* 属性值：
+			* none：元素不能被用户缩放
+			* both：允许用户在水平和垂直方向上调整元素的大小
+			* horizontal允许用户在水平方向上调整元素的大小
+			* vertical：允许用户在垂直方向上调整元素的大小
+
+	box-sizing：默认值为content-box，不可继承
+		* 用于更改用于计算元素宽度和高度的默认的 CSS 盒子模型。
+		* 属性值：
+			* content-box:标准盒子模型，width和height宽和高只包括内容的宽和高，不包括border，padding，margin
+			* 尺寸计算：
+				width = 内容的宽度
+				height - 内容的高度
+			* border-box:width和height包括内容，内边距和边框，但不包括外边距。
+			* 尺寸计算：
+				width：border+padding+内容的width
+				height：border+padding+内容的height
+## 新增UI样式
+### 圆角
+	* css3圆角比传统圆角的优点：
+		1.减少维护的工作量
+		2.提高网页性能
+		3.增加视觉可靠性
+	* border-radius：默认值为0,不可继承属性
+		* 用来设置边框圆角。
+		* 当使用一个半径时确定一个图形，当使用两个半径时确定一个椭圆，这个圆与边框的交集形成圆角效果
+		* 固定的值：
+			固定的px值定义圆形半径或椭圆的半长轴，半短轴，不能用负值。
+		* 百分比的值（在移动端5之前不支持）：
+			使用百分比定义圆形半径或椭圆的半长轴，半短轴。
+			水平半轴相对于盒模型的宽度，垂直半轴相对于盒模型的高度，不能用负值。
+
+### 边框图片
+	border-image
+		* 属性允许在元素的边框上绘制图像
+		* 使用border-image时，将会替换掉border-style属性所设置的边框样式
+	border-image默认值：不可继承
+		* border-image-source: none
+    	* border-image-slice: 100%
+    	* border-image-width: 1
+    	* border-image-outset: none
+    	* border-image-repeat: stretch
+
+	border-image-source:默认值为none，不可继承
+		* 用一张图片改变边框样式
+		* 如果只为none，则仍然使用border-style定义的样式
+	border-image-slice:默认值为100%，不可继承
+		* 会将border-image-source的图片分割成9个区域：四角，四边及中心区域
+		* 值的百分比参照于image本身。
+	border-image-repeat:默认值为stretch，不可继承
+		* 定义图片填充边框
+		* 或为单个值，设置所有的边框；或为两个值，分别设置水平与垂直的边框。
+		* 属性值：
+			* stretch：拉伸
+			* repeat，round：平铺
+	border-image-width:默认值为1，不可继承
+		* 定义图像边框宽度
+	border-image-outset:默认值为0，不可继承
+		* 定义边框图像可超出边框盒的大小
+		* 正值：可超出边框盒的大小
+### 背景
+#### css2.0
+	background-color： 默认值为transparent，不可继承
+		* 设置背景颜色
+	background-image： 默认值为none，不可继承
+		* 用于为一个元素设置一个或多个背景图像，先指定的覆盖后指定的
+		* background-color会在images之下进行绘制，边框和内容会在image之上进行绘制
+	background-repeat: 默认值为repeat，不可继承
+		* 定义背景图像的重复方式
+		* 背景图像可以沿着水平轴，垂直抽，两个轴重复，或者根本不重复
+		* 属性值：
+			* repeat-x：水平铺
+			* repeat-y：垂直铺
+			* repeat：两个轴重复铺
+			* no-repeat：两个轴不重复铺
+	background-position: 默认值为0% 0%，不可继承
+		* 指定背景位置的初始位置
+		* 属性值：
+			* 百分比：参照尺寸为背景图片定位区域的大小减去背景图片的大小
+				* 第一个值：元素在水平方向的位移
+				* 第二个值; 元素在垂直方向的位移
+	background-attachment: 默认值为scroll，不可继承
+		* 决定背景是在视口中固定的还是随包含它的区块滚动的。
+		* 属性值：
+			* fixed：表示背景相对于视口固定，背景不会随着元素的内容滚动
+			* scroll：表示背景相对于元素本身固定，而不随着它的内容滚动
+
+		默认值：不可继承
+		background-color： transparent 
+		background-image： none 
+		background-repeat：repeat
+		background-position:： 0% 0%
+		background-attachment： scroll
+
+#### css3.0
+	默认情况下背景图片是从padding-box开始绘制，从border-box开始裁剪
+	
+	backgroud-origin:
+		* 设置背景的渲染的起始位置
+		* 属性值：
+			* border=box：背景是相对于边框的位置
+			* padding-box：背景是相对于填充框定位的
+			* content-box：背景是相对于内容框定位的
+	backgroud-clip: 
+		* 设置背景裁剪位置
+		* -webkit-background-clip:text,只裁剪字体，写在background属性下面，否则clip不生效
+	background-size: 默认值为auto auto，不可继承
+		* 设置背景图片大小
+		* 属性值：
+			* 百分比：指定背景图片相对背景区的百分比，背景区由background-origin设置，默认为盒模型的内容区与内边距
+			* auto：以背景图片的比例缩放背景图片
+		* 注意：
+			* 单值时，这个值指定图片的宽度，图片的高度隐式的为auto
+			* 两个值：第一个值指定图片的宽度，第二个值指定图片的高度
+	backgroud: 
+		* 用来集中设置各种背景属性，可以设置一个或多个属性
+		background默认值：与顺序无关，不可继承
+			* background-image: none
+			* background-position: 0% 0%
+			* background-size: auto auto
+			* background-repeat: repeat
+			* background-origin: padding-box
+			* background-clip: border-box
+			* background-attachment: scroll
+			* background-color: transparent
+
+### 渐变
+#### 线性渐变：
+	需要设置一个起始点和一个方向（指定为一个角度），还要定义终止色。
+	终止色就是你想让浏览器去平滑的过渡过去，并且你指定为两种，当然也会可以指定更多的颜色去创建复杂的渐变效果。
+
+	默认方向：从上到下发生渐变
+		* linear-geadient（color，color）；
+	可以改变渐变方向：（top bottom left right）
+		* linear-geadient（to 结束方向，color，color）；
+	使用角度：
+		* linear-geadient（角度（deg），color，color）；
+	颜色节点的分布（第一个不写0%，第二个不写100%）
+		* linear-gradient（color 长度或者百分比，color 长度或者百分比）
+	重复渐变：
+		* repeating-linear-geadient(角度deg，color 百分比，color 百分比)
+#### 径向渐变
+	radial-gradient()函数创建一个<image>，用来展示由原点（渐变中心）辐射开的颜色渐变。
+	默认均匀分布：
+		radial-gradient（color，color）
+	不均匀分布
+		radial-gradient（color %，color %）
+	改变渐变的形状
+		radial-gradient（circle，color，color）
+			circle：圆
+			ellipse：默认为椭圆
+	渐变形状的大小
+		radial-gradient（closest-corner circle，color，color）
+			* closest-side: 最近边
+			* farthest-side：最远边
+			* closest-conner: 最近角
+			* farthest-corner: 最远角（默认值）
+	改变圆心
+		radial-gredient(closest-conner circle at px px,color,color)
