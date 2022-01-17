@@ -55,7 +55,7 @@ module.exports = {
             {
                 title: '文档介绍', // 标题
                 collapsable: false, // 下级列表不可折叠
-                path:'/guide/',
+                path:'/',
             },
             {
                 title: '初识 Html',
@@ -109,7 +109,7 @@ module.exports = {
                 title: '初识 TypeScript', // 标题
                 collapsable: false, // 下级列表不可折叠
                 children: [ // 下级列表
-                    'Typescript/01_初识TS',
+                    'Typescript/1_TS基础',
                 ]
             },
 
