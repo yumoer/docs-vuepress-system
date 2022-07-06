@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>4_canvas-下 | Yumoer</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="/docs-vuepress-system/favicon.ico">
+    <meta name="description" content="Hello, my friend!">
+    
+    <link rel="preload" href="/docs-vuepress-system/assets/css/0.styles.af06589c.css" as="style"><link rel="preload" href="/docs-vuepress-system/assets/js/app.96331fda.js" as="script"><link rel="preload" href="/docs-vuepress-system/assets/js/2.f426a6b2.js" as="script"><link rel="preload" href="/docs-vuepress-system/assets/js/24.78889d0f.js" as="script"><link rel="prefetch" href="/docs-vuepress-system/assets/js/10.b57e721b.js"><link rel="prefetch" href="/docs-vuepress-system/assets/js/11.d441f896.js"><link rel="prefetch" href="/docs-vuepress-system/assets/js/12.2e1b375c.js"><link rel="prefetch" href="/docs-vuepress-system/assets/js/13.209aa524.js"><link rel="prefetch" href="/docs-vuepress-system/assets/js/14.828ca6ad.js"><link rel="prefetch" href="/docs-vuepress-system/assets/js/15.b99b5a24.js"><link rel="prefetch" href="/docs-vuepress-system/assets/js/16.2577a670.js"><link rel="prefetch" href="/docs-vuepress-system/assets/js/17.5bd4bf9d.js"><link rel="prefetch" href="/docs-vuepress-system/assets/js/18.6374260a.js"><link rel="prefetch" href="/docs-vuepress-system/assets/js/19.9593044b.js"><link rel="prefetch" href="/docs-vuepress-system/assets/js/20.78750b26.js"><link rel="prefetch" href="/docs-vuepress-system/assets/js/21.7f0ad236.js"><link rel="prefetch" href="/docs-vuepress-system/assets/js/22.63e7e891.js"><link rel="prefetch" href="/docs-vuepress-system/assets/js/23.7a0d0493.js"><link rel="prefetch" href="/docs-vuepress-system/assets/js/25.a10a4279.js"><link rel="prefetch" href="/docs-vuepress-system/assets/js/26.c4760caf.js"><link rel="prefetch" href="/docs-vuepress-system/assets/js/27.1d1f527a.js"><link rel="prefetch" href="/docs-vuepress-system/assets/js/28.288e2c58.js"><link rel="prefetch" href="/docs-vuepress-system/assets/js/29.6d901370.js"><link rel="prefetch" href="/docs-vuepress-system/assets/js/3.95644c27.js"><link rel="prefetch" href="/docs-vuepress-system/assets/js/30.5144dbba.js"><link rel="prefetch" href="/docs-vuepress-system/assets/js/31.9c53d87e.js"><link rel="prefetch" href="/docs-vuepress-system/assets/js/32.9e93f4c6.js"><link rel="prefetch" href="/docs-vuepress-system/assets/js/33.e7aae8d3.js"><link rel="prefetch" href="/docs-vuepress-system/assets/js/34.333600c3.js"><link rel="prefetch" href="/docs-vuepress-system/assets/js/35.432b0e81.js"><link rel="prefetch" href="/docs-vuepress-system/assets/js/36.205a2b84.js"><link rel="prefetch" href="/docs-vuepress-system/assets/js/37.712db7aa.js"><link rel="prefetch" href="/docs-vuepress-system/assets/js/38.74dd5c69.js"><link rel="prefetch" href="/docs-vuepress-system/assets/js/39.ae0d507a.js"><link rel="prefetch" href="/docs-vuepress-system/assets/js/4.7e5cde4c.js"><link rel="prefetch" href="/docs-vuepress-system/assets/js/40.e6558090.js"><link rel="prefetch" href="/docs-vuepress-system/assets/js/5.4a0db07f.js"><link rel="prefetch" href="/docs-vuepress-system/assets/js/6.db7cd489.js"><link rel="prefetch" href="/docs-vuepress-system/assets/js/7.d652f184.js"><link rel="prefetch" href="/docs-vuepress-system/assets/js/8.8fba4dc7.js"><link rel="prefetch" href="/docs-vuepress-system/assets/js/9.d84731b9.js">
+    <link rel="stylesheet" href="/docs-vuepress-system/assets/css/0.styles.af06589c.css">
+  </head>
+  <body class="theme-mode-light">
+    <div id="app" data-server-rendered="true"><div class="theme-container sidebar-open have-rightmenu"><header class="navbar blur"><div title="目录" class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/docs-vuepress-system/" class="home-link router-link-active"><!----> <span class="site-name">Yumoer</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/docs-vuepress-system/" class="nav-link">首页</a></div><div class="nav-item"><a href="/docs-vuepress-system/guide/" class="nav-link">文档</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="语言" class="dropdown-title"><!----> <span class="title" style="display:;">语言</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs-vuepress-system/language/chinese.html" class="nav-link">中文简体</a></li><li class="dropdown-item"><!----> <a href="/docs-vuepress-system/language/english.html" class="nav-link">English</a></li></ul></div></div><div class="nav-item"><a href="https://www.baidu.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+    External
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar-hover-trigger"></div> <aside class="sidebar" style="display:none;"><!----> <nav class="nav-links"><div class="nav-item"><a href="/docs-vuepress-system/" class="nav-link">首页</a></div><div class="nav-item"><a href="/docs-vuepress-system/guide/" class="nav-link">文档</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="语言" class="dropdown-title"><!----> <span class="title" style="display:;">语言</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs-vuepress-system/language/chinese.html" class="nav-link">中文简体</a></li><li class="dropdown-item"><!----> <a href="/docs-vuepress-system/language/english.html" class="nav-link">English</a></li></ul></div></div><div class="nav-item"><a href="https://www.baidu.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+    External
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/docs-vuepress-system/" aria-current="page" class="sidebar-link">文档介绍</a></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>初识 Html</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/docs-vuepress-system/pages/4913e5/" class="sidebar-link">0_简介</a></li><li><a href="/docs-vuepress-system/pages/6d1e80/" class="sidebar-link">1_音视频</a></li><li><a href="/docs-vuepress-system/pages/f8a790/" class="sidebar-link">2_DOM位置&amp;尺寸</a></li><li><a href="/docs-vuepress-system/pages/94e207/" class="sidebar-link">3_canvas-上</a></li><li><a href="/docs-vuepress-system/pages/2b98b7/" aria-current="page" class="active sidebar-link">4_canvas-下</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header level2"><a href="/docs-vuepress-system/pages/2b98b7/#使用图片" class="sidebar-link">使用图片</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header level3"><a href="/docs-vuepress-system/pages/2b98b7/#渐变" class="sidebar-link">渐变</a></li></ul></li><li class="sidebar-sub-header level2"><a href="/docs-vuepress-system/pages/2b98b7/#绘制文本" class="sidebar-link">绘制文本</a></li><li class="sidebar-sub-header level2"><a href="/docs-vuepress-system/pages/2b98b7/#像素操作" class="sidebar-link">像素操作</a></li><li class="sidebar-sub-header level2"><a href="/docs-vuepress-system/pages/2b98b7/#合成" class="sidebar-link">合成</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header level3"><a href="/docs-vuepress-system/pages/2b98b7/#将画布导出为图像" class="sidebar-link">将画布导出为图像</a></li><li class="sidebar-sub-header level3"><a href="/docs-vuepress-system/pages/2b98b7/#事件操作" class="sidebar-link">事件操作</a></li></ul></li></ul></li><li><a href="/docs-vuepress-system/pages/d06bb2/" class="sidebar-link">5_canvas-全</a></li><li><a href="/docs-vuepress-system/pages/6ac21a/" class="sidebar-link">6_其他新增标签和属性</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>初识 Css</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/docs-vuepress-system/pages/8c5d91/" class="sidebar-link">0_要点总结</a></li><li><a href="/docs-vuepress-system/pages/5e54ab/" class="sidebar-link">1_预处理器</a></li><li><a href="/docs-vuepress-system/pages/64dd53/" class="sidebar-link">2_选择器</a></li><li><a href="/docs-vuepress-system/pages/f2c3bd/" class="sidebar-link">3_新的ui方案</a></li><li><a href="/docs-vuepress-system/pages/e0f0b0/" class="sidebar-link">4_媒体查询</a></li><li><a href="/docs-vuepress-system/pages/d24c97/" class="sidebar-link">5_过渡</a></li><li><a href="/docs-vuepress-system/pages/9fc13d/" class="sidebar-link">6_动画</a></li><li><a href="/docs-vuepress-system/pages/893519/" class="sidebar-link">7_grid布局</a></li><li><a href="/docs-vuepress-system/pages/9bfbff/" class="sidebar-link">8_flex布局</a></li><li><a href="/docs-vuepress-system/pages/d78f8f/" class="sidebar-link">9_2D变形</a></li><li><a href="/docs-vuepress-system/pages/b0e54f/" class="sidebar-link">10_3D变形</a></li><li><a href="/docs-vuepress-system/pages/0809a9/" class="sidebar-link">11_项目思路</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>初识 JavaScript</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/docs-vuepress-system/pages/599c00/" class="sidebar-link">0_浏览器存储</a></li><li><a href="/docs-vuepress-system/pages/1391d9/" class="sidebar-link">1_值&amp;数据类型&amp;变量</a></li><li><a href="/docs-vuepress-system/pages/5afd95/" class="sidebar-link">2_内存&amp;垃圾回收机制</a></li><li><a href="/docs-vuepress-system/pages/811ee9/" class="sidebar-link">3_引用数据类型(数组)</a></li><li><a href="/docs-vuepress-system/pages/47ca9b/" class="sidebar-link">4_引用数据类型(函数)</a></li><li><a href="/docs-vuepress-system/pages/1b0c31/" class="sidebar-link">5_强制类型转换</a></li><li><a href="/docs-vuepress-system/pages/1e0513/" class="sidebar-link">6_显示强制类型转换</a></li><li><a href="/docs-vuepress-system/pages/cb3230/" class="sidebar-link">7_隐式强制类型转换</a></li><li><a href="/docs-vuepress-system/pages/ac322d/" class="sidebar-link">8_==操作符</a></li><li><a href="/docs-vuepress-system/pages/62681b/" class="sidebar-link">9_js性能问题</a></li><li><a href="/docs-vuepress-system/pages/03264c/" class="sidebar-link">10_js进阶</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>初识 TypeScript</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/docs-vuepress-system/pages/96f161/" class="sidebar-link">1_TS基础</a></li></ul></section></li></ul> </aside> <div><main class="page"><div class="theme-vdoing-wrapper "><div class="articleInfo-wrap" data-v-082cf275><div class="articleInfo" data-v-082cf275><ul class="breadcrumbs" data-v-082cf275><li data-v-082cf275><a href="/docs-vuepress-system/" title="首页" class="iconfont icon-home router-link-active" data-v-082cf275></a></li> <li data-v-082cf275><a href="/docs-vuepress-system/categories/?category=Html" title="分类" data-v-082cf275>Html</a></li></ul> <div class="info" data-v-082cf275><!----> <div title="创建时间" class="date iconfont icon-riqi" data-v-082cf275><a href="javascript:;" data-v-082cf275>2022-01-16</a></div> <!----></div></div></div> <!----> <div class="content-wrapper"><div class="right-menu-wrapper"><div class="right-menu-margin"><div class="right-menu-title">目录</div> <div class="right-menu-content"></div></div></div> <h1><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAABH1JREFUSA3tVl1oHFUUPmdmd2ltklqbpJDiNnXFmgbFktho7YMPNiJSSZM0+CAYSkUELVhM6YuwIPpgoOKDqOBDC0XE2CQoNtQXBUFTTcCi+Wlh1V2TQExsUzcltd3M9Tt3ZjZzZ2fT+OJTL8yeM+eee757fmeJbq//KQL8X3DUSFOcfr7cRsRtxNQMWueeVzOkaITIGqQHNg5y8+jNW9ldM7A6nTpAjuolUikAwq7CE3WcM2RRDz+XGVgN3FptU/aUSlvq9Pa3iZ1+sgAqJyyAFqkipd9dqiwHF3P65YycLWc/6sqGrvoEoIp6DOFaX5h6+dnfjkWprwqsPk0dUGq5vySwDImC10KxFHgGL1SWoc92O3eVht09qdXNH11I2SsTsJYqMWzihqGMi+A+Garf3BAuuLI5oGlULyNfyB/HYNujwktOfRrMr5t77NmevqaUopx0grnKAyvVpmwUDB4x6FPXuGvYLTDwWsejwgtgkYKPqRJg8SV6xaiZ3ZTppGneS4yfH5/66fZSDHv+QZci/+h5c5UHtpy67JUqGppM0sh0Nc1dW6/N1W5Yoqat8/TU/VnadmdeW2PLLSyh0cvxBs3KbqTmwYPpxN4do/mzE8nEpvX/UMu2Wbp74zUAK5q6WkHns7V0eWkdPbPzd3rxkTGybadYySumVzhcaJFbs5UrEkQ/+CK8gF5dnh/6ciIZ73gwQ927L1IitoxKLXYP3SjYdOrHHfTZhRRlFyrorafPk20B3HPD1y2G3qKZME5Jcf3t/HUC13/8tSd++vqFveMUTwAUxSUFI1QekR1+bIze3D9MF2aq6cPvG72CgnldWCFqyRw3lwH8ZMerjTD9ElRO7Gv44wNpC90aASqGfVlz/Rx17srQ57/UU26hkhQqUB7dBR71WmzQhHUnblGmVOEw0jhbV1n9OlXUDCIRGaNV5Jp43N516fN7JmnTHdfp7Hgy0luO4aMhtkLL8Bi3bUWYvzh5Mn1dTxrL6QmGuRhGL/TiTTxRoEdTszSaq9GR0NGA3KdkOz3hqSV3MIDhQ5IVX/Ivx3umBti2es2h4eZby7x8br1rkf7Mo90AqC8aQ3sJeNzqFRu+vSANAQe3PL7l0HGOAdwDCeZYvNKeoZp1Qfs6Aipndh86HmFRi0LAnEO47wsqM6cdfjh3jBPUzhZy7nvlUfFsamED1VQt6aISHVymXZ/B2aCtIG8AI8xfobj2d3en1wWVhOeHELKmLQ1s211s88comkv4UCwWyF787mJdYXtNfhKAXVqnKTq8QZvGAGGOfaTo5pGZ/PwbUCr5+DPr/1J92JNHr9aOl/F3iI5+O1nfybsGxoimvZ3ViWSluDITw3P37mypheDIPY0tw7+O/5ApbkYw+zpfaUVu32Pi98+defdUhEpZkRFq0aqyNh9FuL9hpYbEm6iwi0z2REd09ZmyENEbuhjDWzKvZXTqKYaBIr3tt5kuPtQBZFvEUwHt60vfCNu41XsksH9Ij1BMMz1Y0OOunHNShFIP5868g5zeXmuLwL9T4b6Q2+KejgAAAABJRU5ErkJggg==">4_canvas-下<!----></h1> <!----> <div class="theme-vdoing-content content__default"><h2 id="使用图片"><a href="#使用图片" class="header-anchor">#</a> 使用图片</h2> <div class="language- extra-class"><pre><code>插入图片
+	* canvas操作图片时，必须要等图片加载完才能操作
+	* drawImage(image,x,y,width,height)
+		* 其中image是image或者canvas对象，x和y是其在目标canvas里的其实坐标
+		* 这两个方法多了两个参数：width和height，这两个参数用来控制canvas画入时应该缩放的大小
+使用背景
+	createPattren(image,&quot;repetition&quot;)
+		* image:图像源
+		* repetition:repeat/repeat-x/repeat-y/no-repeat
+		* 会将createPatern返回的对象作为FILLStyle的值
+</code></pre></div><h3 id="渐变"><a href="#渐变" class="header-anchor">#</a> 渐变</h3> <div class="language- extra-class"><pre><code>线性渐变
+	createLinearGradient(x1,y1,x2,y2)
+		* 表示渐变的起点（x1,y1）与终点（x2,y2）
+
+		* gradient.addColorStop（position，color）
+			* gradient:createLinearGradient的返回值
+			* addColorStop()方法只接受2个参数
+				* position参数必须是一个0.0-1.0之间的数值，表示渐变中颜色所在的相对位置
+				* color参数必须是一个有效的CSS颜色值
+径向渐变
+	createRadialGradient(x1,y1,r1,x2,y2,r2)
+		* 前三个参数则定义另一个以(x1,y1)为原点，半径为r1的圆
+		* 后三个参数则定义另一个以(x2,y2)为原点，半径为r2的圆
+
+		* gradient.addColorStop（position，color）
+			* gradient:createLinearGradient的返回值
+			* addColorStop()方法只接受2个参数
+				* position参数必须是一个0.0-1.0之间的数值，表示渐变中颜色所在的相对位置
+				* color参数必须是一个有效的CSS颜色值
+</code></pre></div><h4 id="飞鸟"><a href="#飞鸟" class="header-anchor">#</a> 飞鸟</h4> <div class="language- extra-class"><pre><code>canvas.width = document.documentElement,clientWidth -  视口宽度
+canvas.height = document.documentElement,clientHeight - 视口高度
+</code></pre></div><h2 id="绘制文本"><a href="#绘制文本" class="header-anchor">#</a> 绘制文本</h2> <div class="language- extra-class"><pre><code>canvas提供了两种方法来渲染文本：
+	* fillText（text,x,y）
+		在指定的（x,y）位置填充指定的文本
+	* strokeText(text,x,y)
+		在指定的(x,y)位置绘制文本内容
+文本样式
+	font = value - 绘制文本的样式
+		* 默认的字体是10px sans-serif
+		* font属性在指定时，必须要有大小和字体
+	textAlign = value - 文本对齐选项
+		left - 文本左对齐
+		center - 文本右对齐
+			* 文本的居中是基于你在fillText时所给的x值
+			* 文本一半在x的左边，一半在x的右边
+		right - 文本居中对齐
+	textBaseline = value - 当前文本基线的属性
+		top - 文本基线在文本块的顶部
+		middle - 文本基线在文本块的中间
+		bottom - 文本基线在文本块的底部
+	measureText() - 方法返回一个TextMetrics对象，包含文本尺寸信息
+文本水平垂直居中
+	
+阴影
+	shadowOffsetx = float
+		* 用来设定阴影在x轴的延伸距离
+		* 默认为0
+	shadowOffsety = float
+		* 用来设定阴影在y轴的延伸距离
+		* 默认为0
+	shadowBlur = float
+		* 用于设定阴影的模糊程度，默认为0
+	shadowcolor = color（必需项）
+		* 用于设定阴影颜色效果，默认是全透明的黑色
+</code></pre></div><h2 id="像素操作"><a href="#像素操作" class="header-anchor">#</a> 像素操作</h2> <div class="language- extra-class"><pre><code>一个对象，三个方法
+imageData对象
+	ImageData对象中存储着canvas对象真实的像素数据，它包含以下几个只读属性：
+		width - 横向上像素点的个数（图片宽度）
+		height - 纵向上像素点的个数（图片高度）
+		data() - UintClampedArray类型的一推数组
+			包含着rgba格式的整体数据，范围在0至255之间
+			r:0 --&gt; 255 (黑色到白色)
+			g:0 --&gt; 255 (黑色到白色)
+			b:0 --&gt; 255 (黑色到白色)
+			a:0 --&gt; 255 (透明到不透明)
+getImageData() - 得到场景像素数据
+	* 获得一个包含画布场景像素数据的ImageData对象，代表画布区域的对象数据
+		ctx.getImageData(sx,sy,sw,sh)
+			sx:将要被提取的图像数据矩形区域的左上角X坐标
+			sy:将要被提取的图像数据矩形区域的左上角y坐标
+			sw:将要被提取的图像数据矩形区域的宽度
+			sh:将要被提取的图像数据矩形区域的高度
+createImageData() - 创建一个ImageData对象
+	ctx.createImageData(width,height);
+		width: ImageData 新对象的宽度
+		height: ImageData 新对象的高度
+			默认创建出来的是透明的rgba（0，0，0，0）
+putImageDate() - 在场景中写入像素数据
+	* putImageData()方法去对场景进行像素数据的写入
+	ctx.putImageDate(myImageData,dx,dy)
+		dx和dy参数表示你希望在场景内左上角绘制的像素数据所得到的设备坐标 
+</code></pre></div><h2 id="合成"><a href="#合成" class="header-anchor">#</a> 合成</h2> <div class="language- extra-class"><pre><code>全局透明度的设置
+	globalAlpha = value
+		这个属性影响到canvas里所有图形的透明度
+		默认值为1.0，有效范围0.0（完全透明）到1.0（完全不透明）
+覆盖合成
+	source:新的图像（源）
+	destination:已经绘制过的图形（目标）
+globalCompositeOperation
+	* source-over(默认):源在上面，新的图像层级比较高
+	* sourcr-in:只留下源与目标的重叠部分（源的一部分）
+	* source-out:只留下源超过目标的部分
+	* source-atop:砍掉源溢出的部分
+	
+	* destination-over:目标在上面，旧的图像层级比较高
+	* destination-in:只留下源与目标的重叠部分（目标的那部分）
+	* destination-out:只留下目标超过源的部分
+	* destination-atop: 砍掉目标溢出的部分
+</code></pre></div><h3 id="将画布导出为图像"><a href="#将画布导出为图像" class="header-anchor">#</a> 将画布导出为图像</h3> <div class="language- extra-class"><pre><code>toDataURL(注意是canvas元素接口上的方法)
+</code></pre></div><h3 id="事件操作"><a href="#事件操作" class="header-anchor">#</a> 事件操作</h3> <div class="language- extra-class"><pre><code>ctx.isPointInpath(x,y)
+	判断在当前路径中是否包含检测点
+		x:检测点的X坐标
+		y:检测点的y坐标
+	注意：此方法只作用于最新画出的canvas图像	
+</code></pre></div></div></div> <!----> <div class="page-edit"><!----> <!----> <!----></div> <div class="page-nav-wapper"><div class="page-nav-centre-wrap"><a href="/docs-vuepress-system/pages/94e207/" class="page-nav-centre page-nav-centre-prev"><div class="tooltip">3_canvas-上</div></a> <a href="/docs-vuepress-system/pages/d06bb2/" class="page-nav-centre page-nav-centre-next"><div class="tooltip">5_canvas-全</div></a></div> <div class="page-nav"><p class="inner"><span class="prev">
+          ←
+          <a href="/docs-vuepress-system/pages/94e207/" class="prev">3_canvas-上</a></span> <span class="next"><a href="/docs-vuepress-system/pages/d06bb2/">5_canvas-全</a>→
+        </span></p></div></div></div> <div class="article-list"><div class="article-title"><a href="/docs-vuepress-system/archives/" class="iconfont icon-bi">最近更新</a></div> <div class="article-wrapper"><dl><dd>01</dd> <dt><a href="/docs-vuepress-system/pages/0809a9/"><div>
+              11_项目思路
+              <!----></div></a> <span class="date">01-16</span></dt></dl><dl><dd>02</dd> <dt><a href="/docs-vuepress-system/pages/b0e54f/"><div>
+              10_3D变形
+              <!----></div></a> <span class="date">01-16</span></dt></dl><dl><dd>03</dd> <dt><a href="/docs-vuepress-system/pages/d78f8f/"><div>
+              9_2D变形
+              <!----></div></a> <span class="date">01-16</span></dt></dl> <dl><dd></dd> <dt><a href="/docs-vuepress-system/archives/" class="more">更多文章&gt;</a></dt></dl></div></div></main></div> <div class="footer"><!----> 
+    Theme by
+    <a href="https://github.com/xugaoyi/vuepress-theme-vdoing" target="_blank" title="本站主题">Vdoing</a> <!----></div> <div class="buttons"><div title="返回顶部" class="button blur go-to-top iconfont icon-fanhuidingbu" style="display:none;"></div> <div title="去评论" class="button blur go-to-comment iconfont icon-pinglun" style="display:none;"></div> <div title="主题模式" class="button blur theme-mode-but iconfont icon-zhuti"><ul class="select-box" style="display:none;"><li class="iconfont icon-zidong">
+            跟随系统
+          </li><li class="iconfont icon-rijianmoshi">
+            浅色模式
+          </li><li class="iconfont icon-yejianmoshi">
+            深色模式
+          </li><li class="iconfont icon-yuedu">
+            阅读模式
+          </li></ul></div></div> <!----> <!----> <!----></div><div class="global-ui"></div></div>
+    <script src="/docs-vuepress-system/assets/js/app.96331fda.js" defer></script><script src="/docs-vuepress-system/assets/js/2.f426a6b2.js" defer></script><script src="/docs-vuepress-system/assets/js/24.78889d0f.js" defer></script>
+  </body>
+</html>

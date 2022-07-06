@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>4_引用数据类型(函数) | Yumoer</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="/docs-vuepress-system/favicon.ico">
+    <meta name="description" content="Hello, my friend!">
+    
+    <link rel="preload" href="/docs-vuepress-system/assets/css/0.styles.af06589c.css" as="style"><link rel="preload" href="/docs-vuepress-system/assets/js/app.96331fda.js" as="script"><link rel="preload" href="/docs-vuepress-system/assets/js/2.f426a6b2.js" as="script"><link rel="preload" href="/docs-vuepress-system/assets/js/32.9e93f4c6.js" as="script"><link rel="prefetch" href="/docs-vuepress-system/assets/js/10.b57e721b.js"><link rel="prefetch" href="/docs-vuepress-system/assets/js/11.d441f896.js"><link rel="prefetch" href="/docs-vuepress-system/assets/js/12.2e1b375c.js"><link rel="prefetch" href="/docs-vuepress-system/assets/js/13.209aa524.js"><link rel="prefetch" href="/docs-vuepress-system/assets/js/14.828ca6ad.js"><link rel="prefetch" href="/docs-vuepress-system/assets/js/15.b99b5a24.js"><link rel="prefetch" href="/docs-vuepress-system/assets/js/16.2577a670.js"><link rel="prefetch" href="/docs-vuepress-system/assets/js/17.5bd4bf9d.js"><link rel="prefetch" href="/docs-vuepress-system/assets/js/18.6374260a.js"><link rel="prefetch" href="/docs-vuepress-system/assets/js/19.9593044b.js"><link rel="prefetch" href="/docs-vuepress-system/assets/js/20.78750b26.js"><link rel="prefetch" href="/docs-vuepress-system/assets/js/21.7f0ad236.js"><link rel="prefetch" href="/docs-vuepress-system/assets/js/22.63e7e891.js"><link rel="prefetch" href="/docs-vuepress-system/assets/js/23.7a0d0493.js"><link rel="prefetch" href="/docs-vuepress-system/assets/js/24.78889d0f.js"><link rel="prefetch" href="/docs-vuepress-system/assets/js/25.a10a4279.js"><link rel="prefetch" href="/docs-vuepress-system/assets/js/26.c4760caf.js"><link rel="prefetch" href="/docs-vuepress-system/assets/js/27.1d1f527a.js"><link rel="prefetch" href="/docs-vuepress-system/assets/js/28.288e2c58.js"><link rel="prefetch" href="/docs-vuepress-system/assets/js/29.6d901370.js"><link rel="prefetch" href="/docs-vuepress-system/assets/js/3.95644c27.js"><link rel="prefetch" href="/docs-vuepress-system/assets/js/30.5144dbba.js"><link rel="prefetch" href="/docs-vuepress-system/assets/js/31.9c53d87e.js"><link rel="prefetch" href="/docs-vuepress-system/assets/js/33.e7aae8d3.js"><link rel="prefetch" href="/docs-vuepress-system/assets/js/34.333600c3.js"><link rel="prefetch" href="/docs-vuepress-system/assets/js/35.432b0e81.js"><link rel="prefetch" href="/docs-vuepress-system/assets/js/36.205a2b84.js"><link rel="prefetch" href="/docs-vuepress-system/assets/js/37.712db7aa.js"><link rel="prefetch" href="/docs-vuepress-system/assets/js/38.74dd5c69.js"><link rel="prefetch" href="/docs-vuepress-system/assets/js/39.ae0d507a.js"><link rel="prefetch" href="/docs-vuepress-system/assets/js/4.7e5cde4c.js"><link rel="prefetch" href="/docs-vuepress-system/assets/js/40.e6558090.js"><link rel="prefetch" href="/docs-vuepress-system/assets/js/5.4a0db07f.js"><link rel="prefetch" href="/docs-vuepress-system/assets/js/6.db7cd489.js"><link rel="prefetch" href="/docs-vuepress-system/assets/js/7.d652f184.js"><link rel="prefetch" href="/docs-vuepress-system/assets/js/8.8fba4dc7.js"><link rel="prefetch" href="/docs-vuepress-system/assets/js/9.d84731b9.js">
+    <link rel="stylesheet" href="/docs-vuepress-system/assets/css/0.styles.af06589c.css">
+  </head>
+  <body class="theme-mode-light">
+    <div id="app" data-server-rendered="true"><div class="theme-container sidebar-open"><header class="navbar blur"><div title="目录" class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/docs-vuepress-system/" class="home-link router-link-active"><!----> <span class="site-name">Yumoer</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/docs-vuepress-system/" class="nav-link">首页</a></div><div class="nav-item"><a href="/docs-vuepress-system/guide/" class="nav-link">文档</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="语言" class="dropdown-title"><!----> <span class="title" style="display:;">语言</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs-vuepress-system/language/chinese.html" class="nav-link">中文简体</a></li><li class="dropdown-item"><!----> <a href="/docs-vuepress-system/language/english.html" class="nav-link">English</a></li></ul></div></div><div class="nav-item"><a href="https://www.baidu.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+    External
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar-hover-trigger"></div> <aside class="sidebar" style="display:none;"><!----> <nav class="nav-links"><div class="nav-item"><a href="/docs-vuepress-system/" class="nav-link">首页</a></div><div class="nav-item"><a href="/docs-vuepress-system/guide/" class="nav-link">文档</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="语言" class="dropdown-title"><!----> <span class="title" style="display:;">语言</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs-vuepress-system/language/chinese.html" class="nav-link">中文简体</a></li><li class="dropdown-item"><!----> <a href="/docs-vuepress-system/language/english.html" class="nav-link">English</a></li></ul></div></div><div class="nav-item"><a href="https://www.baidu.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+    External
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/docs-vuepress-system/" aria-current="page" class="sidebar-link">文档介绍</a></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>初识 Html</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/docs-vuepress-system/pages/4913e5/" class="sidebar-link">0_简介</a></li><li><a href="/docs-vuepress-system/pages/6d1e80/" class="sidebar-link">1_音视频</a></li><li><a href="/docs-vuepress-system/pages/f8a790/" class="sidebar-link">2_DOM位置&amp;尺寸</a></li><li><a href="/docs-vuepress-system/pages/94e207/" class="sidebar-link">3_canvas-上</a></li><li><a href="/docs-vuepress-system/pages/2b98b7/" class="sidebar-link">4_canvas-下</a></li><li><a href="/docs-vuepress-system/pages/d06bb2/" class="sidebar-link">5_canvas-全</a></li><li><a href="/docs-vuepress-system/pages/6ac21a/" class="sidebar-link">6_其他新增标签和属性</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>初识 Css</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/docs-vuepress-system/pages/8c5d91/" class="sidebar-link">0_要点总结</a></li><li><a href="/docs-vuepress-system/pages/5e54ab/" class="sidebar-link">1_预处理器</a></li><li><a href="/docs-vuepress-system/pages/64dd53/" class="sidebar-link">2_选择器</a></li><li><a href="/docs-vuepress-system/pages/f2c3bd/" class="sidebar-link">3_新的ui方案</a></li><li><a href="/docs-vuepress-system/pages/e0f0b0/" class="sidebar-link">4_媒体查询</a></li><li><a href="/docs-vuepress-system/pages/d24c97/" class="sidebar-link">5_过渡</a></li><li><a href="/docs-vuepress-system/pages/9fc13d/" class="sidebar-link">6_动画</a></li><li><a href="/docs-vuepress-system/pages/893519/" class="sidebar-link">7_grid布局</a></li><li><a href="/docs-vuepress-system/pages/9bfbff/" class="sidebar-link">8_flex布局</a></li><li><a href="/docs-vuepress-system/pages/d78f8f/" class="sidebar-link">9_2D变形</a></li><li><a href="/docs-vuepress-system/pages/b0e54f/" class="sidebar-link">10_3D变形</a></li><li><a href="/docs-vuepress-system/pages/0809a9/" class="sidebar-link">11_项目思路</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>初识 JavaScript</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/docs-vuepress-system/pages/599c00/" class="sidebar-link">0_浏览器存储</a></li><li><a href="/docs-vuepress-system/pages/1391d9/" class="sidebar-link">1_值&amp;数据类型&amp;变量</a></li><li><a href="/docs-vuepress-system/pages/5afd95/" class="sidebar-link">2_内存&amp;垃圾回收机制</a></li><li><a href="/docs-vuepress-system/pages/811ee9/" class="sidebar-link">3_引用数据类型(数组)</a></li><li><a href="/docs-vuepress-system/pages/47ca9b/" aria-current="page" class="active sidebar-link">4_引用数据类型(函数)</a></li><li><a href="/docs-vuepress-system/pages/1b0c31/" class="sidebar-link">5_强制类型转换</a></li><li><a href="/docs-vuepress-system/pages/1e0513/" class="sidebar-link">6_显示强制类型转换</a></li><li><a href="/docs-vuepress-system/pages/cb3230/" class="sidebar-link">7_隐式强制类型转换</a></li><li><a href="/docs-vuepress-system/pages/ac322d/" class="sidebar-link">8_==操作符</a></li><li><a href="/docs-vuepress-system/pages/62681b/" class="sidebar-link">9_js性能问题</a></li><li><a href="/docs-vuepress-system/pages/03264c/" class="sidebar-link">10_js进阶</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>初识 TypeScript</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/docs-vuepress-system/pages/96f161/" class="sidebar-link">1_TS基础</a></li></ul></section></li></ul> </aside> <div><main class="page"><div class="theme-vdoing-wrapper "><div class="articleInfo-wrap" data-v-082cf275><div class="articleInfo" data-v-082cf275><ul class="breadcrumbs" data-v-082cf275><li data-v-082cf275><a href="/docs-vuepress-system/" title="首页" class="iconfont icon-home router-link-active" data-v-082cf275></a></li> <li data-v-082cf275><a href="/docs-vuepress-system/categories/?category=Javascript" title="分类" data-v-082cf275>Javascript</a></li></ul> <div class="info" data-v-082cf275><!----> <div title="创建时间" class="date iconfont icon-riqi" data-v-082cf275><a href="javascript:;" data-v-082cf275>2022-01-16</a></div> <!----></div></div></div> <!----> <div class="content-wrapper"><!----> <h1><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAABH1JREFUSA3tVl1oHFUUPmdmd2ltklqbpJDiNnXFmgbFktho7YMPNiJSSZM0+CAYSkUELVhM6YuwIPpgoOKDqOBDC0XE2CQoNtQXBUFTTcCi+Wlh1V2TQExsUzcltd3M9Tt3ZjZzZ2fT+OJTL8yeM+eee757fmeJbq//KQL8X3DUSFOcfr7cRsRtxNQMWueeVzOkaITIGqQHNg5y8+jNW9ldM7A6nTpAjuolUikAwq7CE3WcM2RRDz+XGVgN3FptU/aUSlvq9Pa3iZ1+sgAqJyyAFqkipd9dqiwHF3P65YycLWc/6sqGrvoEoIp6DOFaX5h6+dnfjkWprwqsPk0dUGq5vySwDImC10KxFHgGL1SWoc92O3eVht09qdXNH11I2SsTsJYqMWzihqGMi+A+Garf3BAuuLI5oGlULyNfyB/HYNujwktOfRrMr5t77NmevqaUopx0grnKAyvVpmwUDB4x6FPXuGvYLTDwWsejwgtgkYKPqRJg8SV6xaiZ3ZTppGneS4yfH5/66fZSDHv+QZci/+h5c5UHtpy67JUqGppM0sh0Nc1dW6/N1W5Yoqat8/TU/VnadmdeW2PLLSyh0cvxBs3KbqTmwYPpxN4do/mzE8nEpvX/UMu2Wbp74zUAK5q6WkHns7V0eWkdPbPzd3rxkTGybadYySumVzhcaJFbs5UrEkQ/+CK8gF5dnh/6ciIZ73gwQ927L1IitoxKLXYP3SjYdOrHHfTZhRRlFyrorafPk20B3HPD1y2G3qKZME5Jcf3t/HUC13/8tSd++vqFveMUTwAUxSUFI1QekR1+bIze3D9MF2aq6cPvG72CgnldWCFqyRw3lwH8ZMerjTD9ElRO7Gv44wNpC90aASqGfVlz/Rx17srQ57/UU26hkhQqUB7dBR71WmzQhHUnblGmVOEw0jhbV1n9OlXUDCIRGaNV5Jp43N516fN7JmnTHdfp7Hgy0luO4aMhtkLL8Bi3bUWYvzh5Mn1dTxrL6QmGuRhGL/TiTTxRoEdTszSaq9GR0NGA3KdkOz3hqSV3MIDhQ5IVX/Ivx3umBti2es2h4eZby7x8br1rkf7Mo90AqC8aQ3sJeNzqFRu+vSANAQe3PL7l0HGOAdwDCeZYvNKeoZp1Qfs6Aipndh86HmFRi0LAnEO47wsqM6cdfjh3jBPUzhZy7nvlUfFsamED1VQt6aISHVymXZ/B2aCtIG8AI8xfobj2d3en1wWVhOeHELKmLQ1s211s88comkv4UCwWyF787mJdYXtNfhKAXVqnKTq8QZvGAGGOfaTo5pGZ/PwbUCr5+DPr/1J92JNHr9aOl/F3iI5+O1nfybsGxoimvZ3ViWSluDITw3P37mypheDIPY0tw7+O/5ApbkYw+zpfaUVu32Pi98+defdUhEpZkRFq0aqyNh9FuL9hpYbEm6iwi0z2REd09ZmyENEbuhjDWzKvZXTqKYaBIr3tt5kuPtQBZFvEUwHt60vfCNu41XsksH9Ij1BMMz1Y0OOunHNShFIP5868g5zeXmuLwL9T4b6Q2+KejgAAAABJRU5ErkJggg==">4_引用数据类型(函数)<!----></h1> <!----> <div class="theme-vdoing-content content__default"><p>###引用数据类型(函数)
+函数是javascript中的一等公民。javascript中不分普通函数和构造函数。
+只存在函数的普通调用和构造调用。如果函数被普通调用，那即为普通函数。
+如果函数被构造调用，那即为构造函数。
+a.原生函数
+String()
+Number()
+Boolean()
+Array()
+Object()
+Function()
+RegExp()
+---在实际情况中没有必要使用 new Object() 来创建对象，因为这样就无法像常量形式那样一次设定多个属性，而必须逐一设定
+---构造函数 Function 只在极少数情况下很有用，比如动态定义函数参数和函数体的时候，你基本上不会通过这种方式来定义函数
+---强烈建议使用常量形式（如 /^a*b+/g ）来定义正则表达式，这样不仅语法简单，执行效率也更高，因为 JavaScript  引擎在代码执行前会对它们进行预编译和缓存。
+---与前面的构造函数不同， RegExp(..) 有时还是很有用的，比如动态定义正则表达式
+Date()
+Error()
+---相较于其他原生构造函数， Date(..) 和 Error(..) 的用处要大很多，因为没有对应的常量形式来作为它们的替代。
+创建日期对象必须使用 new Date()
+创建错误对象使用 new Error（）
+function foo(x) {
+if (!x) {
+throw new Error( &quot;x wasn't provided&quot; );
+}
+}
+注意：
+var a = new String( &quot;abc&quot; );
+typeof a; //  typeof a的类型是 &quot;object&quot; ，不是 &quot;String&quot;</p> <div class="language- extra-class"><pre><code>	b.[[class]]
+		所有 typeof 返回值为 object的对象都包含一个内部属性 [[Class]];
+		这个属性无法直接访问，一般通过 Object.prototype.toString.call()方法来查看 。
+		多数情况下，对象的内部的[[Class]] 属性和创建该对象的原生构造函数相对应
+		
+		Object.prototype.toString.call( [1,2,3] );		// &quot;[object Array]&quot;
+		Object.prototype.toString.call( /a/i );			// &quot;[object RegExp]&quot;
+		
+		注意：基本数据类型居然也有对应的[[class]]
+			Object.prototype.toString.call( null );		// &quot;[object Null]&quot;
+			Object.prototype.toString.call( undefined );// &quot;[object Undefined]&quot;
+			Object.prototype.toString.call( &quot;abc&quot; );	// &quot;[object String]&quot;
+			Object.prototype.toString.call( 42 );		// &quot;[object Number]&quot;
+			Object.prototype.toString.call( true );		// &quot;[object Boolean]&quot;
+			Object.prototype.toString.call(function(){})// &quot;[object Function]&quot;
+	
+	c.基本数据类型的包装类----装包
+			由于基本类型值没有 .length 和 .toString() 这样的属性和方法，
+		需要通过封装对象才能访问，此时 JavaScript  会自动为基本类型值 包装 （ box或者 wrap）一个封装对象
+			var a = &quot;abc&quot;;
+			a.length; // 3
+			a.toUpperCase(); // &quot;ABC&quot;
+			如果需要经常用到这些字符串属性和方法，比如在 for 循环中使用 i &lt; a.length ，那么从一开始就创建一个封装对象也许更为方便，
+			这样 JavaScript  引擎就不用每次都自动创建了
+			但实际证明这并不是一个好办法，因为浏览器已经为 .length 这样的常见情况做了性能优化，直接使用封装对象来 “ 提前优化 ” 代码 反而会降低执行效率 。
+			一般情况下，我们不需要直接使用封装对象。最好的办法是让 JavaScript  引擎自己决定什么时候应该使用封装对象。
+			换句话说，就是应该优先考虑使用 &quot;abc&quot; 和 42 这样的基本类型值，而非 new String(&quot;abc&quot;) 和 new Number(42) 。
+	
+	d.基本数据类型的包装类----拆包
+		如果想要得到封装对象中的基本类型值，可以使用 valueOf() 函数;
+		var a = new String( &quot;abc&quot; );
+		var b = new Number( 42 );
+		var c = new Boolean( true );
+		a.valueOf(); // &quot;abc&quot;
+		b.valueOf(); // 42
+		c.valueOf(); // true
+		
+		valueOf	
+			JavaScript 调用 valueOf() 方法用来把对象转换成原始类型的值（数值、字符串和布尔值）。 
+			你很少需要自己调用此函数; JavaScript 会自动调用此函数当需要转换成一个原始值时。
+			默认情况下, valueOf() 会被每个对象Object继承。每一个内置对象都会覆盖这个方法为了返回一个合理的值，
+			如果对象没有原始值，valueOf() 就会返回对象自己
+	
+	c.自定义函数
+	d.回调函数
+	e.IIFE:Immediately Invoked Function Expression
+		(function(){})()
+</code></pre></div></div></div> <!----> <div class="page-edit"><!----> <!----> <!----></div> <div class="page-nav-wapper"><div class="page-nav-centre-wrap"><a href="/docs-vuepress-system/pages/811ee9/" class="page-nav-centre page-nav-centre-prev"><div class="tooltip">3_引用数据类型(数组)</div></a> <a href="/docs-vuepress-system/pages/1b0c31/" class="page-nav-centre page-nav-centre-next"><div class="tooltip">5_强制类型转换</div></a></div> <div class="page-nav"><p class="inner"><span class="prev">
+          ←
+          <a href="/docs-vuepress-system/pages/811ee9/" class="prev">3_引用数据类型(数组)</a></span> <span class="next"><a href="/docs-vuepress-system/pages/1b0c31/">5_强制类型转换</a>→
+        </span></p></div></div></div> <div class="article-list"><div class="article-title"><a href="/docs-vuepress-system/archives/" class="iconfont icon-bi">最近更新</a></div> <div class="article-wrapper"><dl><dd>01</dd> <dt><a href="/docs-vuepress-system/pages/0809a9/"><div>
+              11_项目思路
+              <!----></div></a> <span class="date">01-16</span></dt></dl><dl><dd>02</dd> <dt><a href="/docs-vuepress-system/pages/b0e54f/"><div>
+              10_3D变形
+              <!----></div></a> <span class="date">01-16</span></dt></dl><dl><dd>03</dd> <dt><a href="/docs-vuepress-system/pages/d78f8f/"><div>
+              9_2D变形
+              <!----></div></a> <span class="date">01-16</span></dt></dl> <dl><dd></dd> <dt><a href="/docs-vuepress-system/archives/" class="more">更多文章&gt;</a></dt></dl></div></div></main></div> <div class="footer"><!----> 
+    Theme by
+    <a href="https://github.com/xugaoyi/vuepress-theme-vdoing" target="_blank" title="本站主题">Vdoing</a> <!----></div> <div class="buttons"><div title="返回顶部" class="button blur go-to-top iconfont icon-fanhuidingbu" style="display:none;"></div> <div title="去评论" class="button blur go-to-comment iconfont icon-pinglun" style="display:none;"></div> <div title="主题模式" class="button blur theme-mode-but iconfont icon-zhuti"><ul class="select-box" style="display:none;"><li class="iconfont icon-zidong">
+            跟随系统
+          </li><li class="iconfont icon-rijianmoshi">
+            浅色模式
+          </li><li class="iconfont icon-yejianmoshi">
+            深色模式
+          </li><li class="iconfont icon-yuedu">
+            阅读模式
+          </li></ul></div></div> <!----> <!----> <!----></div><div class="global-ui"></div></div>
+    <script src="/docs-vuepress-system/assets/js/app.96331fda.js" defer></script><script src="/docs-vuepress-system/assets/js/2.f426a6b2.js" defer></script><script src="/docs-vuepress-system/assets/js/32.9e93f4c6.js" defer></script>
+  </body>
+</html>
