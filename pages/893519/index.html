@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>7_grid布局 | Yumoer</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="/docs-vuepress-system/favicon.ico">
+    <meta name="description" content="Hello, my friend!">
+    
+    <link rel="preload" href="/docs-vuepress-system/assets/css/0.styles.af06589c.css" as="style"><link rel="preload" href="/docs-vuepress-system/assets/js/app.96331fda.js" as="script"><link rel="preload" href="/docs-vuepress-system/assets/js/2.f426a6b2.js" as="script"><link rel="preload" href="/docs-vuepress-system/assets/js/17.5bd4bf9d.js" as="script"><link rel="prefetch" href="/docs-vuepress-system/assets/js/10.b57e721b.js"><link rel="prefetch" href="/docs-vuepress-system/assets/js/11.d441f896.js"><link rel="prefetch" href="/docs-vuepress-system/assets/js/12.2e1b375c.js"><link rel="prefetch" href="/docs-vuepress-system/assets/js/13.209aa524.js"><link rel="prefetch" href="/docs-vuepress-system/assets/js/14.828ca6ad.js"><link rel="prefetch" href="/docs-vuepress-system/assets/js/15.b99b5a24.js"><link rel="prefetch" href="/docs-vuepress-system/assets/js/16.2577a670.js"><link rel="prefetch" href="/docs-vuepress-system/assets/js/18.6374260a.js"><link rel="prefetch" href="/docs-vuepress-system/assets/js/19.9593044b.js"><link rel="prefetch" href="/docs-vuepress-system/assets/js/20.78750b26.js"><link rel="prefetch" href="/docs-vuepress-system/assets/js/21.7f0ad236.js"><link rel="prefetch" href="/docs-vuepress-system/assets/js/22.63e7e891.js"><link rel="prefetch" href="/docs-vuepress-system/assets/js/23.7a0d0493.js"><link rel="prefetch" href="/docs-vuepress-system/assets/js/24.78889d0f.js"><link rel="prefetch" href="/docs-vuepress-system/assets/js/25.a10a4279.js"><link rel="prefetch" href="/docs-vuepress-system/assets/js/26.c4760caf.js"><link rel="prefetch" href="/docs-vuepress-system/assets/js/27.1d1f527a.js"><link rel="prefetch" href="/docs-vuepress-system/assets/js/28.288e2c58.js"><link rel="prefetch" href="/docs-vuepress-system/assets/js/29.6d901370.js"><link rel="prefetch" href="/docs-vuepress-system/assets/js/3.95644c27.js"><link rel="prefetch" href="/docs-vuepress-system/assets/js/30.5144dbba.js"><link rel="prefetch" href="/docs-vuepress-system/assets/js/31.9c53d87e.js"><link rel="prefetch" href="/docs-vuepress-system/assets/js/32.9e93f4c6.js"><link rel="prefetch" href="/docs-vuepress-system/assets/js/33.e7aae8d3.js"><link rel="prefetch" href="/docs-vuepress-system/assets/js/34.333600c3.js"><link rel="prefetch" href="/docs-vuepress-system/assets/js/35.432b0e81.js"><link rel="prefetch" href="/docs-vuepress-system/assets/js/36.205a2b84.js"><link rel="prefetch" href="/docs-vuepress-system/assets/js/37.712db7aa.js"><link rel="prefetch" href="/docs-vuepress-system/assets/js/38.74dd5c69.js"><link rel="prefetch" href="/docs-vuepress-system/assets/js/39.ae0d507a.js"><link rel="prefetch" href="/docs-vuepress-system/assets/js/4.7e5cde4c.js"><link rel="prefetch" href="/docs-vuepress-system/assets/js/40.e6558090.js"><link rel="prefetch" href="/docs-vuepress-system/assets/js/5.4a0db07f.js"><link rel="prefetch" href="/docs-vuepress-system/assets/js/6.db7cd489.js"><link rel="prefetch" href="/docs-vuepress-system/assets/js/7.d652f184.js"><link rel="prefetch" href="/docs-vuepress-system/assets/js/8.8fba4dc7.js"><link rel="prefetch" href="/docs-vuepress-system/assets/js/9.d84731b9.js">
+    <link rel="stylesheet" href="/docs-vuepress-system/assets/css/0.styles.af06589c.css">
+  </head>
+  <body class="theme-mode-light">
+    <div id="app" data-server-rendered="true"><div class="theme-container sidebar-open have-rightmenu"><header class="navbar blur"><div title="目录" class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/docs-vuepress-system/" class="home-link router-link-active"><!----> <span class="site-name">Yumoer</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/docs-vuepress-system/" class="nav-link">首页</a></div><div class="nav-item"><a href="/docs-vuepress-system/guide/" class="nav-link">文档</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="语言" class="dropdown-title"><!----> <span class="title" style="display:;">语言</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs-vuepress-system/language/chinese.html" class="nav-link">中文简体</a></li><li class="dropdown-item"><!----> <a href="/docs-vuepress-system/language/english.html" class="nav-link">English</a></li></ul></div></div><div class="nav-item"><a href="https://www.baidu.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+    External
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar-hover-trigger"></div> <aside class="sidebar" style="display:none;"><!----> <nav class="nav-links"><div class="nav-item"><a href="/docs-vuepress-system/" class="nav-link">首页</a></div><div class="nav-item"><a href="/docs-vuepress-system/guide/" class="nav-link">文档</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="语言" class="dropdown-title"><!----> <span class="title" style="display:;">语言</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs-vuepress-system/language/chinese.html" class="nav-link">中文简体</a></li><li class="dropdown-item"><!----> <a href="/docs-vuepress-system/language/english.html" class="nav-link">English</a></li></ul></div></div><div class="nav-item"><a href="https://www.baidu.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+    External
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/docs-vuepress-system/" aria-current="page" class="sidebar-link">文档介绍</a></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>初识 Html</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/docs-vuepress-system/pages/4913e5/" class="sidebar-link">0_简介</a></li><li><a href="/docs-vuepress-system/pages/6d1e80/" class="sidebar-link">1_音视频</a></li><li><a href="/docs-vuepress-system/pages/f8a790/" class="sidebar-link">2_DOM位置&amp;尺寸</a></li><li><a href="/docs-vuepress-system/pages/94e207/" class="sidebar-link">3_canvas-上</a></li><li><a href="/docs-vuepress-system/pages/2b98b7/" class="sidebar-link">4_canvas-下</a></li><li><a href="/docs-vuepress-system/pages/d06bb2/" class="sidebar-link">5_canvas-全</a></li><li><a href="/docs-vuepress-system/pages/6ac21a/" class="sidebar-link">6_其他新增标签和属性</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>初识 Css</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/docs-vuepress-system/pages/8c5d91/" class="sidebar-link">0_要点总结</a></li><li><a href="/docs-vuepress-system/pages/5e54ab/" class="sidebar-link">1_预处理器</a></li><li><a href="/docs-vuepress-system/pages/64dd53/" class="sidebar-link">2_选择器</a></li><li><a href="/docs-vuepress-system/pages/f2c3bd/" class="sidebar-link">3_新的ui方案</a></li><li><a href="/docs-vuepress-system/pages/e0f0b0/" class="sidebar-link">4_媒体查询</a></li><li><a href="/docs-vuepress-system/pages/d24c97/" class="sidebar-link">5_过渡</a></li><li><a href="/docs-vuepress-system/pages/9fc13d/" class="sidebar-link">6_动画</a></li><li><a href="/docs-vuepress-system/pages/893519/" aria-current="page" class="active sidebar-link">7_grid布局</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header level2"><a href="/docs-vuepress-system/pages/893519/#bootstrap" class="sidebar-link">bootstrap</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header level3"><a href="/docs-vuepress-system/pages/893519/#栅格源码分析" class="sidebar-link">栅格源码分析</a></li><li class="sidebar-sub-header level3"><a href="/docs-vuepress-system/pages/893519/#响应式工具" class="sidebar-link">响应式工具</a></li></ul></li></ul></li><li><a href="/docs-vuepress-system/pages/9bfbff/" class="sidebar-link">8_flex布局</a></li><li><a href="/docs-vuepress-system/pages/d78f8f/" class="sidebar-link">9_2D变形</a></li><li><a href="/docs-vuepress-system/pages/b0e54f/" class="sidebar-link">10_3D变形</a></li><li><a href="/docs-vuepress-system/pages/0809a9/" class="sidebar-link">11_项目思路</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>初识 JavaScript</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/docs-vuepress-system/pages/599c00/" class="sidebar-link">0_浏览器存储</a></li><li><a href="/docs-vuepress-system/pages/1391d9/" class="sidebar-link">1_值&amp;数据类型&amp;变量</a></li><li><a href="/docs-vuepress-system/pages/5afd95/" class="sidebar-link">2_内存&amp;垃圾回收机制</a></li><li><a href="/docs-vuepress-system/pages/811ee9/" class="sidebar-link">3_引用数据类型(数组)</a></li><li><a href="/docs-vuepress-system/pages/47ca9b/" class="sidebar-link">4_引用数据类型(函数)</a></li><li><a href="/docs-vuepress-system/pages/1b0c31/" class="sidebar-link">5_强制类型转换</a></li><li><a href="/docs-vuepress-system/pages/1e0513/" class="sidebar-link">6_显示强制类型转换</a></li><li><a href="/docs-vuepress-system/pages/cb3230/" class="sidebar-link">7_隐式强制类型转换</a></li><li><a href="/docs-vuepress-system/pages/ac322d/" class="sidebar-link">8_==操作符</a></li><li><a href="/docs-vuepress-system/pages/62681b/" class="sidebar-link">9_js性能问题</a></li><li><a href="/docs-vuepress-system/pages/03264c/" class="sidebar-link">10_js进阶</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>初识 TypeScript</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/docs-vuepress-system/pages/96f161/" class="sidebar-link">1_TS基础</a></li></ul></section></li></ul> </aside> <div><main class="page"><div class="theme-vdoing-wrapper "><div class="articleInfo-wrap" data-v-082cf275><div class="articleInfo" data-v-082cf275><ul class="breadcrumbs" data-v-082cf275><li data-v-082cf275><a href="/docs-vuepress-system/" title="首页" class="iconfont icon-home router-link-active" data-v-082cf275></a></li> <li data-v-082cf275><a href="/docs-vuepress-system/categories/?category=Css" title="分类" data-v-082cf275>Css</a></li></ul> <div class="info" data-v-082cf275><!----> <div title="创建时间" class="date iconfont icon-riqi" data-v-082cf275><a href="javascript:;" data-v-082cf275>2022-01-16</a></div> <!----></div></div></div> <!----> <div class="content-wrapper"><div class="right-menu-wrapper"><div class="right-menu-margin"><div class="right-menu-title">目录</div> <div class="right-menu-content"></div></div></div> <h1><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAABGpJREFUSA3tVVtoXFUU3fvOI53UlmCaKIFmwEhsE7QK0ipFEdHEKpXaZGrp15SINsXUWvBDpBgQRKi0+KKoFeJHfZA+ED9KKoIU2gYD9UejTW4rVIzm0VSTziPzuNu1z507dibTTjL4U/DAzLn3nL3X2o91ziX6f9wMFdh6Jvbm9nNSV0msViVO6tN1Rm7NMu2OpeJ9lWBUTDxrJbYTS0hInuwciu9eLHlFxCLCZEk3MegsJmZ5K/JD6t7FkFdEvGUo1g7qJoG3MHImqRIn8/nzY1K9UPKKiJmtnUqHVE3Gbuay6vJE/N2FEmuxFjW2nUuE0yQXRRxLiTUAzs36zhZvOXJPdX850EVnnLZkB8prodQoM5JGj7Xk2mvC7JB8tG04Ef5PiXtG0UtxupRQSfTnBoCy554x18yJHI6I+G5Eru4LHmPJZEQsrvPUbMiA8G/WgMK7w7I+ez7++o2ANfbrjvaOl1tFMs+htG3IrZH9/hDX1Pr8Tc0UvH8tcX29KzAgIGcEkINyW5BF9x891hw6VYqgJHEk0huccS7vh3C6gTiODL+26huuBtbct8eZnqLML8PkxGYpuPZBqtqwkSjgc4mB5gbgig5i+y0UDK35LMxXisn9xQtK+nd26gTIHsHe/oblK/b29fUmN/8Y+9jAQrnBp56m1LcDlDp9irKTExSKduXJVWSqdBMA08pEJnEIOB3FPPMybu/oeV8zFeYN3xx576Q6RH+VmplE4ncQV5v+5rzSoyOU7PuEAg8g803PwBJ0CExno/jcMbN8tONYeOmHiuUNryvm3fRUy4tMPVLdAGkUhNWuggGrJcXPv+ouCjz0MKUHz1J2/E8IC9nqTabcxgaBYM0hPhD5Y65FsbxRQKxCQrDjDctW7PUM3HuZunFyifSAqEfuzCp48Il24luWUWZoyJCaPR82jE0+kFA643wRFVni4RYSq3ohJO2pZ7B5dO4xkDWbEpossJPLSrPjYID8rS2UHTlvyNxqIGsg674XJJ7vnh5L7PNwC4hh2sjCI96mzszOTpxLF0T7l88Yz7lAuK6OnL8gXLOnTvpzSb22YG8W7us3jSebFHeeqnXRG1vt+MoUM84LQIBmMsCTAcOauTh0T0l0neQK7m2bLMt2mGxU3HYssS0J2cdv5wljlPsrIuZLAG/2DOZIXgCYT8uMGZN+e2kSirfxZOPCsC0f24nTZzspnVn9VePS1Z5vubmAGGXG8ZFno9Hel0yfA5ZPhF7Dh972BQJ2qCpgH67lmWtBYbvk6sz02wjky2vXyz0XErP/kFB619js1BtwfOV4OPRqOQBjy3Qbk18vigUPPSD5ceHnwck7W9bhAqZdd7SuG7w4/P2F/GaJh8c7e9qgow+Q7cGBo+98WsLkuktFqiZabtXuQTu/Y5ETbR0v7tNSFnvrmu6pjdoan2KjMu8q/Hmj1EfCO2ZGfEIbIXKUlw8qaX9/b2oeSJmFksSeT/Fn0V3nSypChh4Gjh74ybO9aeZ/AN2dwciu2/MhAAAAAElFTkSuQmCC">7_grid布局<!----></h1> <!----> <div class="theme-vdoing-content content__default"><h2 id="bootstrap"><a href="#bootstrap" class="header-anchor">#</a> bootstrap</h2> <div class="language- extra-class"><pre><code>1.流体容器（.container-fluid） - 相当于width：auto，会根据浏览器宽度自适应
+2.固定容器（.container） - 会根据浏览器宽度有固定阈值
+	      阈值                    width	
+大于等于1200（lg - 大屏pc）    1170（1140+槽宽）
+
+大于等于992（md - 中屏pc）      970（940+槽宽）
+小于1200    
+
+大于等于768（sm - 平板）        750（720+槽宽）
+小于992
+
+小于768（xs - 移动手机）             auto
+3.栅格系统 - 把一行分12列，根据比例划分宽度
+	@grid-gutter-width:30px - 槽宽
+	ceil（） - 对上取整
+	floor（） - 对下取整
+	percentage（） - 百分比函数
+</code></pre></div><h3 id="栅格源码分析"><a href="#栅格源码分析" class="header-anchor">#</a> 栅格源码分析</h3> <div class="language- extra-class"><pre><code>1.固定容器&amp;流体容器的公共样式 - .container-fixed(包括清除浮动)
+	.container-fixed（）--&gt;
+		margin-right:auto;
+		margin-left:auto;
+		padding-left:15px;
+		padding-right:15px;
+		&amp;:extend(.clearfix all);
+2.固定容器的特定样式（sm-md-lg顺序不可变，sm（移动设备）优先）
+	.container --&gt;
+		.container-fixed();
+		@media (min-width:@screen-sm-min){
+			width:@container-sm;
+		}
+		@media (min-width:@screen-md-min){
+			width:@container-md;
+		}
+		@media (min-width:@screen-lg-min){
+			width:@container-lg;
+		}
+	
+3.行
+	.make-row() --&gt;（包括清除浮动）
+		margin-left:-15px;
+		margin-right:-15px;
+		&amp;:extend(.clearfix all);
+	 
+4.列
+	//第一部分
+	.make-grid-columns()--&gt;
+		.col-xs-1,.col-sm-1,.col-md-1,.col-lg-1,
+		.col-xs-2,.col-sm-2,.col-md-2,.col-lg-2,
+		...
+		.col-xs-12,.col-sm-12,.col-md-12,.col-lg-12{
+			position:relative;
+			min-height:1px;
+			padding-left:15px;
+			padding-right:15px
+		}
+	//第二部分
+	.make-grid(xs/sm/md/lg)--&gt;index=12向下传递
+		//第二部分第一步（float）
+		float-grid-columns(@class);
+			@ .col-xs-1;col-xs-2,clo-xs-3,col-xs-4,...col-xs-12{
+				float:left;
+			}
+		//第二部分第二步（width）
+		.loop-grid-columns(@grid-columns,@class,width);
+			.col-xs-12{
+				width:12/12;
+			}
+			.col-xs-11{
+				width:11/12;
+			}
+			...
+			.col-xs-1{
+				width:1/12;
+			}
+		//第二部分第三步(列排序-向左排序left)
+		.loop-grid-columns(@grid-columns,@class,push);
+			.col-xs-push-12{
+				left:12/12;
+			}
+			.col-xs-push-11{
+				left:11/12;
+			}
+			...
+			.col-xs-push-1{
+				left:1/12;
+			}
+			.col-xs-push-0{
+				left:auto;
+			}
+		//第二部分第四步（列排序-向右排序right）
+		.loop-grip-columns(@grid-columns,@class,pull);
+			.col-xs-pull-12{
+				right:12/12;
+			}
+			.col-xs-pull-11{
+				right:11/12;
+			}
+			...
+			.col-xs-pull-1{
+				right:1/12;
+			}
+			.col-xs-pull-0{
+				right:auto;
+			}
+		//第二部分第五步（列偏移margin-left）
+		.loop-grid-columns(@grid-columns,@class,offset);
+			.col-xs-offset-12{
+				margin-left:12/12;
+			}
+			.col-xs-offset-11{
+				margin-left:11/12;
+			}
+			...
+			.col-xs-offset-1{
+				margin-left:1/12;
+			}
+			.col-xs-offset-0{
+				margin-left:0;
+			}	
+</code></pre></div><h4 id="递归"><a href="#递归" class="header-anchor">#</a> 递归</h4> <div class="language- extra-class"><pre><code>递归
+	.col(@index, @list) when (@index =&lt; @grid-columns) { 
+		@item: ~&quot;.col-xs-@{index}, .col-sm-@{index}, .col-md-@{index}, .col-lg-@{index}&quot;;
+		.col((@index + 1), ~&quot;@{list}, @{item}&quot;);
+	}
+	上方式 = 下方式
+    .col(3,&quot;.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1,.col-xs-2, .col-sm-2, .col-md-2, .col-lg-2&quot;)
+        ....
+    .col(13,str)
+        str:
+            .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1,
+            .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2,
+            ...
+            .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12
+</code></pre></div><h4 id="注意"><a href="#注意" class="header-anchor">#</a> 注意</h4> <div class="language- extra-class"><pre><code>顺序从sx-sm-md-lg，排序时不能跳跃，需要一层一层往下传递
+</code></pre></div><h4 id="栅格盒模型设计的精妙之处"><a href="#栅格盒模型设计的精妙之处" class="header-anchor">#</a> 栅格盒模型设计的精妙之处</h4> <div class="language- extra-class"><pre><code>	容器两边有15px的padding
+	行  两边有-15px的margin
+	列  两边有15px的padding
+	
+	为了维护槽宽的规则：
+		列两边必须要有15px的padding
+	为了能使列嵌套行
+		行两边必须要有-15px的margin
+	为了让容器可以包裹住行
+		容器两边必须要有15px的padding
+</code></pre></div><h3 id="响应式工具"><a href="#响应式工具" class="header-anchor">#</a> 响应式工具</h3> <div class="language- extra-class"><pre><code>可用的类 - 通过单独或联合使用以下列出的类，可以针对不同屏幕尺寸隐藏或显示页面内容
+	visible-xs（-*）:只有xs的尺寸能显示，其它尺寸不显示
+		*：值为block，inline，inline-block，不建议使用，除了&lt;table&gt;元素的特殊类型外。
+	hidden-xs:除了xs的尺寸不显示，其他尺寸都显示
+</code></pre></div></div></div> <!----> <div class="page-edit"><!----> <!----> <!----></div> <div class="page-nav-wapper"><div class="page-nav-centre-wrap"><a href="/docs-vuepress-system/pages/9fc13d/" class="page-nav-centre page-nav-centre-prev"><div class="tooltip">6_动画</div></a> <a href="/docs-vuepress-system/pages/9bfbff/" class="page-nav-centre page-nav-centre-next"><div class="tooltip">8_flex布局</div></a></div> <div class="page-nav"><p class="inner"><span class="prev">
+          ←
+          <a href="/docs-vuepress-system/pages/9fc13d/" class="prev">6_动画</a></span> <span class="next"><a href="/docs-vuepress-system/pages/9bfbff/">8_flex布局</a>→
+        </span></p></div></div></div> <div class="article-list"><div class="article-title"><a href="/docs-vuepress-system/archives/" class="iconfont icon-bi">最近更新</a></div> <div class="article-wrapper"><dl><dd>01</dd> <dt><a href="/docs-vuepress-system/pages/0809a9/"><div>
+              11_项目思路
+              <!----></div></a> <span class="date">01-16</span></dt></dl><dl><dd>02</dd> <dt><a href="/docs-vuepress-system/pages/b0e54f/"><div>
+              10_3D变形
+              <!----></div></a> <span class="date">01-16</span></dt></dl><dl><dd>03</dd> <dt><a href="/docs-vuepress-system/pages/d78f8f/"><div>
+              9_2D变形
+              <!----></div></a> <span class="date">01-16</span></dt></dl> <dl><dd></dd> <dt><a href="/docs-vuepress-system/archives/" class="more">更多文章&gt;</a></dt></dl></div></div></main></div> <div class="footer"><!----> 
+    Theme by
+    <a href="https://github.com/xugaoyi/vuepress-theme-vdoing" target="_blank" title="本站主题">Vdoing</a> <!----></div> <div class="buttons"><div title="返回顶部" class="button blur go-to-top iconfont icon-fanhuidingbu" style="display:none;"></div> <div title="去评论" class="button blur go-to-comment iconfont icon-pinglun" style="display:none;"></div> <div title="主题模式" class="button blur theme-mode-but iconfont icon-zhuti"><ul class="select-box" style="display:none;"><li class="iconfont icon-zidong">
+            跟随系统
+          </li><li class="iconfont icon-rijianmoshi">
+            浅色模式
+          </li><li class="iconfont icon-yejianmoshi">
+            深色模式
+          </li><li class="iconfont icon-yuedu">
+            阅读模式
+          </li></ul></div></div> <!----> <!----> <!----></div><div class="global-ui"></div></div>
+    <script src="/docs-vuepress-system/assets/js/app.96331fda.js" defer></script><script src="/docs-vuepress-system/assets/js/2.f426a6b2.js" defer></script><script src="/docs-vuepress-system/assets/js/17.5bd4bf9d.js" defer></script>
+  </body>
+</html>
